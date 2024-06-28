@@ -1,0 +1,80 @@
+$side-form-border-radius: $default-border-radius;
+
+.side-form {
+  display: flex;
+
+  &__content {
+    padding-top: 30px;
+    padding-left: 42px;
+    padding-right: 30px;
+    background-color: $gray-900;
+  }
+
+  &__title {
+    background-color: $primary;
+    @include font-size(20);
+    font-weight: 500;
+    color: #000;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 35px;
+    width: 360px;
+    margin-left: -42px;
+    padding-left: 42px;
+    padding-right: 42px;
+    text-align: center;
+  }
+
+  &__block {
+    position: relative;
+    text-align: center;
+    background-color: #474747;
+    max-width: 318px;
+    padding: 43px 26px 23px 26px;
+    border-radius: $side-form-border-radius;
+    border: 1px solid #696969;
+
+    &::before {
+      content: '';
+      position: absolute;
+      transform: translateX(-50%);
+      top: 0;
+      left: 50%;
+      display: block;
+      width: 84px;
+      height: 12px;
+      background-color: #fff;
+    }
+  }
+
+  &__subtitle {
+    @include font-size(16);
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include font-size(12);
+    //font-size: .8rem;
+    //line-height: .8rem;
+  }
+
+  .form-privacy {
+    max-width: 210px;
+    margin: auto;
+  }
+}
+
+.form-privacy {
+  text-align: center;
+  font-weight: 300;
+  @include font-size(10);
+
+  a {
+    color: $secondary;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,6 @@
+// Create your own map
+$custom-colors: (
+  "nk-dark": #900
+);
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

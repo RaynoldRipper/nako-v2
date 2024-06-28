@@ -1,0 +1,25 @@
+@include media-breakpoint-up(lg) {
+  .hide-up-lg {
+    display: none;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .hide-up-xl {
+    display: none;
+  }
+}
+
+
+
+@include media-breakpoint-down(lg) {
+  .hide-down-lg {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .hide-down-xl {
+    display: none;
+  }
+}

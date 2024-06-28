@@ -1,0 +1,111 @@
+$bgr-color: #636363;
+
+.intro {
+  position: relative;
+  background-color: $bgr-color;
+  overflow: hidden;
+  padding-bottom: 60px;
+  padding-top: 30px;
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__text {
+    position: relative;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 40px;
+    max-width: 500px;
+    margin-bottom: 58px;
+    z-index: 2;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: calc(100% + 50vw);
+      height: 100%;
+      background-color: #3B3B3B;
+      z-index: -1;
+      border-top-right-radius: $default-border-radius;
+      border-bottom-right-radius: $default-border-radius;
+    }
+  }
+
+  &__bgr {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__brand {
+    position: absolute;
+    right: 523px;
+    top: 60px;
+    padding: 24px 50px 24px 38px;
+    background-color: rgba(0, 0, 0, .4);
+    //border-top-left-radius: $default-border-radius;
+    //border-bottom-left-radius: $default-border-radius;
+    border-radius: $default-border-radius;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .intro {
+    &__brand {
+      clip-path: polygon(0px 0px, 97% 0px, 81% 100%, 0px 100%);
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 40px;
+
+    & > .container,& > .container-xl {
+      order: 2;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+
+    &__brand {
+      position: initial;
+      order: 3;
+      margin-top: 16px;
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+
+    &__bgr {
+      position: initial;
+      order: 1;
+      img {
+        width: 119%;
+        margin-left: -19%;
+      }
+    }
+
+    &__title {
+      margin-top: 20px;
+    }
+
+    &__text {
+      margin-bottom: 22px;
+
+      &::after {
+        right: initial;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

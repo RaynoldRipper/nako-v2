@@ -1,0 +1,24 @@
+{
+  "name": "nako-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.6",
+    "vite": "^5.3.1",
+    "vite-plugin-svg-sprite": "^0.5.2",
+    "vite-svg-sprite-wrapper": "^1.3.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
+  }
+}

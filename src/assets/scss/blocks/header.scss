@@ -1,0 +1,71 @@
+// Local variables
+$side-nav-color: #000;
+
+.main-header {
+
+  .navbar {
+    position: relative;
+    background-color: $gray-900;
+    z-index: 11;
+  }
+
+  &__description {
+    max-width: 215px;
+    @include font-size(12);
+  }
+
+  &__contacts {
+    margin-left: 40px;
+  }
+
+  &__navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__side-menu {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 0;
+    transform: translateY(-100%);
+    transition: all .5s;
+    opacity: 0;
+
+    &.active {
+      top: 63px;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &__side-nav {
+    padding-right: 140px;
+    padding-left: 78px;
+    background-color: $side-nav-color;
+
+    .navbar-nav {
+
+    }
+
+    .nav-item {
+
+    }
+
+    .nav-link {
+
+      &.active {
+
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .main-header {
+    &__navbar {
+      //display: none;
+    }
+  }
+}

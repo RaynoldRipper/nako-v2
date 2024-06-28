@@ -1,0 +1,18 @@
+$input-bgr: #6C6C6C;
+$nako-input-border-radius: 10px;
+
+
+.nako-input {
+  @include font-size(12);
+  background-color: $input-bgr;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  text-align: center;
+  border: none;
+  border-radius: $nako-input-border-radius;
+  width: 100%;
+
+  &::placeholder {
+    color: #838383;
+  }
+}
