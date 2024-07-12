@@ -1,0 +1,9 @@
+:root {
+  --default-border-radius: #{$default-border-radius};
+}
+
+@include media-breakpoint-down(md) {
+  //:root {
+  //  --default-border-radius: 5px;
+  //}
+}

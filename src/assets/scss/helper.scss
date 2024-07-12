@@ -18,8 +18,19 @@
   }
 }
 
+@include media-breakpoint-down(md) {
+  .hide-down-md {
+    display: none;
+  }
+}
+
 @include media-breakpoint-down(xl) {
   .hide-down-xl {
     display: none;
   }
+}
+
+
+.full-width {
+  width: 100%;
 }

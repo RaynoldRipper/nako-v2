@@ -1,0 +1,30 @@
+.consult-contact {
+  margin-top: 25px;
+  padding-top: 60px;
+  padding-bottom: 38px;
+  margin-bottom: 25px;
+  position: relative;
+  background-image: url('assets/img/contact-bgr-right.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &__title {
+    margin-bottom: 56px;
+  }
+
+  &__list {
+    margin-bottom: 77px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+}
+
+@include media-breakpoint-between(md, xl) {
+  .consult-contact {
+    //padding-top: 15px;
+    //padding-bottom: 22px;
+  }
+}

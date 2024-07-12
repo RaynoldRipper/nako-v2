@@ -2,6 +2,7 @@
 @import "fonts";
 @import "global";
 @import "helper";
+@import "swiper";
 
 // Mixins
 @import "mixins";
@@ -9,9 +10,21 @@
 // Blocks
 @import "blocks/header";
 @import "blocks/intro";
+@import "blocks/build-types";
+@import "blocks/image-map";
+@import "blocks/contact";
+@import "blocks/portfolio";
+@import "blocks/contact-deal";
+@import "blocks/contact-consult";
+@import "blocks/project";
+@import "blocks/video-review";
 
 // Ui
 @import "ui/buttons";
 @import "ui/typgraphy";
 @import "ui/forms";
 @import "ui/inputs";
+@import "ui/cards";
+@import "ui/section";
+@import "ui/lists";
+@import "ui/links";

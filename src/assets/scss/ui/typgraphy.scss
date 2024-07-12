@@ -28,3 +28,13 @@
     @include font-size(44);
   }
 }
+
+.nako-title-1 {
+  @include section-title;
+  background: linear-gradient(45deg, #FFFFFF, #818181);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  //-moz-background-clip: text;
+  //-moz-text-fill-color: transparent;
+}

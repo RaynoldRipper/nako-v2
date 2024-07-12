@@ -1,0 +1,15 @@
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 70px;
+  
+  &__header {
+    margin-bottom: 40px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .portfolio {
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+}

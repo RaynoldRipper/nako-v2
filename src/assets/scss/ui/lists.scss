@@ -1,0 +1,21 @@
+.nako-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      background-color: #fff;
+      width: 5px;
+      height: 5px;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}

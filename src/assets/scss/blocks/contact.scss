@@ -1,0 +1,129 @@
+.contact {
+
+  &__photo {
+    position: absolute;
+    background-image: url("assets/img/contact-bgr-left-2.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__list {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__content {
+
+  }
+
+  &__form {
+    position: relative;
+    background-color: rgba(255, 251, 251, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 35px 48px;
+    border-radius: var(--default-border-radius);
+
+    &__title {
+      @include font-size(14);
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    &__description {
+      @include font-size(12);
+      font-weight: lighter;
+    }
+
+    &__fields {
+      //margin-bottom: 25px;
+    }
+
+    &__policy {
+      @include font-size(12);
+      font-weight: lighter;
+      text-align: center;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 80px;
+      height: 8px;
+      background-color: #fff;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@include media-breakpoint-between(md, xl) {
+  .contact {
+    //&__content {
+    //  background-color: rgba(0, 0, 0, 0.7);
+    //  padding: 30px;
+    //  border-radius: var(--default-border-radius);
+    //}
+
+    &__photo {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+}
+
+/************************ Deal contact block ************************/
+
+
+@include media-breakpoint-down(md) {
+  .contact {
+    background-image: url("assets/img/contact-mobile-bgr.png");
+    background-color: #1B1B1B;
+    padding-top: 55px;
+    padding-bottom: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &__title {
+      margin-bottom: 22px;
+    }
+
+    &__photo {
+      position: initial;
+      margin-bottom: 40px;
+
+      img {
+        width: 100%;
+        //width: calc(100% + var(--bs-gutter-x));
+        //margin-left: calc(var(--bs-gutter-x) * (-0.5));
+      }
+    }
+
+    &__form {
+      padding: 32px 20px 20px 20px;
+
+      &__title {
+        text-align: left;
+      }
+
+      &__policy {
+        text-align: left;
+      }
+    }
+  }
+}

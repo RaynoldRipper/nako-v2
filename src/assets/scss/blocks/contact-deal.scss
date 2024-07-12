@@ -1,0 +1,55 @@
+.contact-deal {
+  overflow: hidden;
+  padding-top: 65px;
+  margin-bottom: 25px;
+  background-image: url("assets/img/deal-contact-bgr-left.png"), url("assets/img/deal-contact-bgr-right.png");
+  background-position-x: left, right;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin-bottom: 42px;
+    max-width: 460px;
+  }
+
+  &__image {
+    img {
+      //width: 100%;
+    }
+  }
+
+  &__form {
+    max-width: 376px;
+    padding: 32px;
+    background-color: #454545;
+
+    .contact__form {
+      &__title {
+        text-align: left;
+      }
+
+      &__policy {
+        text-align: left;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .contact-deal {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-position-y: bottom;
+    background-size: 210px 280px, 330px;
+
+    &__image {
+      padding-top: 60px;
+
+      img {
+        display: block;
+        margin: auto;
+        max-width: 270px;
+        width: 100%;
+      }
+    }
+  }
+}

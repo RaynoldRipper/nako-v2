@@ -1,0 +1,13 @@
+.video-review {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    margin-bottom: 45px;
+    @include font-size(14);
+  }
+}

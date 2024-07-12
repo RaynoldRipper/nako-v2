@@ -31,8 +31,8 @@ $bgr-color: #636363;
       height: 100%;
       background-color: #3B3B3B;
       z-index: -1;
-      border-top-right-radius: $default-border-radius;
-      border-bottom-right-radius: $default-border-radius;
+      border-top-right-radius: var(--default-border-radius);
+      border-bottom-right-radius: var(--default-border-radius);
     }
   }
 
@@ -48,9 +48,9 @@ $bgr-color: #636363;
     top: 60px;
     padding: 24px 50px 24px 38px;
     background-color: rgba(0, 0, 0, .4);
-    //border-top-left-radius: $default-border-radius;
-    //border-bottom-left-radius: $default-border-radius;
-    border-radius: $default-border-radius;
+    //border-top-left-radius: var(--default-border-radius);
+    //border-bottom-left-radius: var(--default-border-radius);
+    border-radius: var(--default-border-radius);
   }
 }
 

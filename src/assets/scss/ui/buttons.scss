@@ -1,8 +1,8 @@
 // Local variables
 $social-btn-border-radius: 5px;
-$primary-btn-border-radius: 10px;
 
 .nako-btn {
+  display: inline-block;
   background-color: initial;
   border: initial;
   transition: all .3s;
@@ -40,7 +40,7 @@ $primary-btn-border-radius: 10px;
         margin-bottom: 8px;
       }
 
-      &:nth-child(2){
+      &:nth-child(2) {
         width: 50%;
         margin-left: auto;
       }
@@ -56,16 +56,19 @@ $primary-btn-border-radius: 10px;
 
     &.active {
       width: 30px;
+
       i {
         margin-bottom: 0;
 
         &:nth-child(1) {
           transform: rotate(-45deg);
         }
+
         &:nth-child(2) {
           width: 0;
           height: 0;
         }
+
         &:nth-child(3) {
           transform: rotate(45deg);
           margin-top: -3px;
@@ -76,20 +79,50 @@ $primary-btn-border-radius: 10px;
 
   // Primary btn
   &.primary {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
     background-color: $primary;
     box-shadow: 0px 4px 0px 0px #BD8947;
-    border-radius: $primary-btn-border-radius;
+    border-radius: var(--default-border-radius);
     padding: 21px;
     text-transform: uppercase;
-    font-size: .7rem;
+    @include font-size(14);
     font-weight: 700;
     color: #000;
+
+    &.sm {
+      padding: 14px;
+      @include font-size(12);
+      font-weight: 500;
+    }
 
     &:hover {
       background-color: lighten($primary, 7%);
     }
+
     &:active {
       background-color: #ffaa43;
+    }
+  }
+
+  &.outline {
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: var(--default-border-radius);
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s;
+    font-weight: 500;
+
+    &.black {
+      color: #000;
+      border-color: #000;
+    }
+
+    &:hover {
+      opacity: .8;
     }
   }
 
@@ -105,9 +138,16 @@ $primary-btn-border-radius: 10px;
       }
     }
   }
+}
 
-  // Btn modifications
-  .full-width {
-    width: 100%;
+@include media-breakpoint-down(md) {
+  .nako-btn {
+    &.primary {
+      &.sm {
+        padding: 10px 20px;
+        @include font-size(12);
+        border-radius: 5px;
+      }
+    }
   }
 }
