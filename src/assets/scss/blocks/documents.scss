@@ -1,0 +1,10 @@
+.documents {
+  background-color: $white;
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+  &__title {
+    margin-bottom: 50px;
+    color: $black;
+  }
+}

@@ -2,6 +2,22 @@
   .hide-up-lg {
     display: none;
   }
+
+  .order-up-lg-1 {
+    order: 1;
+  }
+
+  .order-up-lg-2 {
+    order: 2;
+  }
+
+  .order-up-lg-3 {
+    order: 3;
+  }
+
+  .order-up-lg-4 {
+    order: 4;
+  }
 }
 
 @include media-breakpoint-up(xl) {
@@ -11,10 +27,25 @@
 }
 
 
-
 @include media-breakpoint-down(lg) {
   .hide-down-lg {
     display: none;
+  }
+
+  .order-down-lg-1 {
+    order: 1;
+  }
+
+  .order-down-lg-2 {
+    order: 2;
+  }
+
+  .order-down-lg-3 {
+    order: 3;
+  }
+
+  .order-down-lg-4 {
+    order: 4;
   }
 }
 

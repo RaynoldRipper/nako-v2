@@ -1,0 +1,49 @@
+.step-block {
+  &__title {
+    @include font-size(40);
+  }
+
+  &__nav-tabs {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: $default-border-radius;
+    border: 1px solid $primary;
+  }
+
+  &__tab-content {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  &__tab-item {
+    &__name {
+      @include font-size(24);
+      font-weight: 500;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      @include font-size(14);
+      font-weight: 300;
+      max-width: 355px;
+    }
+
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .step-block {
+    &__item {
+      &__text {
+        margin-bottom: 85px;
+      }
+    }
+  }
+}

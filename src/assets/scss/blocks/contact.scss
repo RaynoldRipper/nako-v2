@@ -2,11 +2,16 @@
 
   &__photo {
     position: absolute;
-    background-image: url("assets/img/contact-bgr-left-2.png");
+    background-image: url("/assets/img/contact-bgr-left-2.png");
     background-repeat: no-repeat;
     background-position: right top;
     top: 0;
     left: 0;
+    max-height: 800px;
+
+    img {
+      height: 100%;
+    }
   }
 
   &__title {
@@ -17,6 +22,10 @@
   &__list {
     position: relative;
     z-index: 2;
+  }
+
+  &__item {
+    margin-bottom: 20px;
   }
 
   &__content {
@@ -92,7 +101,7 @@
 
 @include media-breakpoint-down(md) {
   .contact {
-    background-image: url("assets/img/contact-mobile-bgr.png");
+    background-image: url("/assets/img/contact-mobile-bgr.png");
     background-color: #1B1B1B;
     padding-top: 55px;
     padding-bottom: 45px;
@@ -124,6 +133,14 @@
       &__policy {
         text-align: left;
       }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .contact {
+    &__photo {
+      height: 100%;
     }
   }
 }

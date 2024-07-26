@@ -1,5 +1,26 @@
 .section {
+  &.dark {
+    background-color: $gray-900;
 
+    .section__title {
+      color: $white;
+    }
+  }
+
+  &.light {
+    background-color: $white;
+    color: $black;
+
+    .section__title {
+      color: $black;
+    }
+  }
+
+  &.adaptive-bgr {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 .section__title {

@@ -2,6 +2,9 @@
 $side-nav-color: #000;
 
 .main-header {
+  position: sticky;
+  top: 0;
+  z-index: 15;
 
   .navbar {
     position: relative;
@@ -26,12 +29,21 @@ $side-nav-color: #000;
 
   &__side-menu {
     position: absolute;
-    display: flex;
+    overflow: auto;
+    max-height: 95vh;
     right: 0;
     top: 0;
     transform: translateY(-100%);
     transition: all .5s;
     opacity: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: $black;
+
+    &__wrapper {
+      display: flex;
+    }
 
     &.active {
       top: 63px;
@@ -66,6 +78,36 @@ $side-nav-color: #000;
   .main-header {
     &__navbar {
       //display: none;
+    }
+    &__side-menu {
+      &.active {
+        top: 52px;
+      }
+    }
+
+    &__side-nav {
+      padding-right: 60px;
+      padding-left: 20px;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .main-header {
+    &__side-form {
+      order: 2;
+    }
+    &__side-menu {
+      &__wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      &.active {
+        background-color: $gray-900;
+      }
+    }
+    &__side-nav {
+      order: 1;
+      background-color: $gray-900;
     }
   }
 }

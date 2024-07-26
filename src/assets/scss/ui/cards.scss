@@ -1,11 +1,13 @@
 .nako-card {
 
   &__image {
+    display: inline-block;
     position: relative;
     border-radius: var(--default-border-radius);
     overflow: hidden;
     margin-bottom: 20px;
     cursor: pointer;
+    width: 100%;
 
     &:hover {
       &::after {
@@ -15,6 +17,9 @@
 
     img {
       width: 100%;
+      object-fit: cover;
+      max-height: 225px;
+      object-position: bottom;
     }
 
     &::after {
@@ -60,7 +65,34 @@
   }
 }
 
+.card-wrapper {
+  position: relative;
+  background-color: rgba(255, 251, 251, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 35px 48px;
+  border-radius: $default-border-radius;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 8px;
+    background-color: #fff;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
 @include media-breakpoint-up(md) {
+  .nako-card {
+    &__btn {
+      width: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
   .nako-card {
     &__btn {
       width: 100%;

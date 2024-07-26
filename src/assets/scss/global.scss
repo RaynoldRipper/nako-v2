@@ -1,3 +1,7 @@
 body {
     font-family: $font-family-gotham;
 }
+
+.menu-opened {
+    overflow: hidden;
+}

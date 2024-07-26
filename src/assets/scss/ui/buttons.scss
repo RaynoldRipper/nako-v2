@@ -140,6 +140,47 @@ $social-btn-border-radius: 5px;
   }
 }
 
+.nako-btn-close {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #000;
+    height: 1px;
+    width: 22px;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .nako-btn {
+    &.primary {
+      &.lg {
+        padding: 28px;
+        max-width: 320px;
+        width: 100%;
+      }
+    }
+  }
+}
+
 @include media-breakpoint-down(md) {
   .nako-btn {
     &.primary {

@@ -1,0 +1,79 @@
+.map {
+  position: relative;
+
+  &__title {
+    margin-bottom: 44px;
+  }
+
+  &__card {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    top: 100px;
+    left: 0;
+    background-color: $gray-900 !important;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    &__name {
+      font-weight: 300;
+      margin-bottom: 17px;
+    }
+
+    &__text {
+      @include font-size(14);
+      font-weight: 500;
+    }
+
+    &__phone {
+      @include font-size(20);
+      color: $white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    &__social {
+      display: flex;
+    }
+
+    &__social-btn {
+      margin-right: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $default-border-radius;
+      border: 1px solid $primary;
+      width: 45px;
+      height: 45px;
+
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .map {
+    padding-top: 420px;
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      &__name {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__card {
+      top: -365px;
+    }
+  }
+}

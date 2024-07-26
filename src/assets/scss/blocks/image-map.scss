@@ -125,39 +125,71 @@
       height: 34px;
       background-color: #fff;
 
-      &--1 {
-        left: 82%;
-        top: 74%;
-      }
-
-      &--2 {
-        left: 46%;
-        top: 38%;
-      }
-
-      &--3 {
-        left: 85%;
-        top: 43%;
-      }
-
-      &--4 {
-        left: 29%;
-        top: 62%;
-      }
-
-      &--5 {
-        left: 60%;
-        top: 56%;
-      }
-
-      &--6 {
-        left: 15%;
-        top: 46%;
-      }
-
       &:focus {
         .image-map__point-info {
           display: block;
+        }
+      }
+    }
+  }
+
+  .map-1 {
+    .image-map {
+      &__point-item {
+        &--1 {
+          left: 82%;
+          top: 74%;
+        }
+
+        &--2 {
+          left: 46%;
+          top: 38%;
+        }
+
+        &--3 {
+          left: 85%;
+          top: 43%;
+        }
+
+        &--4 {
+          left: 29%;
+          top: 62%;
+        }
+
+        &--5 {
+          left: 60%;
+          top: 56%;
+        }
+
+        &--6 {
+          left: 15%;
+          top: 46%;
+        }
+      }
+    }
+  }
+
+  .map-2 {
+    .image-map {
+      &__point-item {
+        &--1 {
+          left: 30%;
+          top: 35%;
+        }
+
+        &--2 {
+          right: 24%;
+          top: 23%;
+        }
+
+        &--3 {
+          right: 21%;
+          top: 53%;
+        }
+
+        &--4 {
+          left: 40%;
+          top: 71%;
         }
       }
     }

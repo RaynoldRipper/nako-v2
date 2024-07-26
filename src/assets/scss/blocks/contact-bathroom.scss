@@ -1,0 +1,37 @@
+.contact-bathroom {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 95px;
+  background-image: url(/assets/img/deal-contact-bgr-left.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  .contact__title {
+    margin-bottom: 30px;
+  }
+
+  .contact__photo {
+    right: 0;
+    left: initial;
+    background-image: none;
+  }
+
+  .contact__list {
+    margin-bottom: 60px;
+  }
+
+  .contact__item {
+    margin-bottom: 0;
+  }
+
+  .contact__form {
+    background-color: $form-main-bgr;
+    
+    &__title {
+      text-align: left;
+    }
+    &__policy {
+      text-align: left;
+    }
+  }
+}

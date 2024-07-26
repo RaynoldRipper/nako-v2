@@ -7,6 +7,7 @@ $side-form-border-radius: $default-border-radius;
     padding-top: 30px;
     padding-left: 42px;
     padding-right: 30px;
+    padding-bottom: 30px;
     background-color: $gray-900;
   }
 
@@ -76,5 +77,23 @@ $side-form-border-radius: $default-border-radius;
   a {
     color: $secondary;
     text-decoration: none;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .side-form {
+    &__image {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .side-form {
+    &__side-menu {
+      &__wrapper {
+        flex-direction: column;
+      }
+    }
   }
 }

@@ -2,22 +2,12 @@
 @import "fonts";
 @import "global";
 @import "helper";
-@import "swiper";
 
 // Mixins
 @import "mixins";
 
-// Blocks
-@import "blocks/header";
-@import "blocks/intro";
-@import "blocks/build-types";
-@import "blocks/image-map";
-@import "blocks/contact";
-@import "blocks/portfolio";
-@import "blocks/contact-deal";
-@import "blocks/contact-consult";
-@import "blocks/project";
-@import "blocks/video-review";
+// Libs
+@import "swiper";
 
 // Ui
 @import "ui/buttons";
@@ -28,3 +18,36 @@
 @import "ui/section";
 @import "ui/lists";
 @import "ui/links";
+@import "ui/breadcrumbs";
+@import "ui/overlay";
+
+// Blocks
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/build-types";
+@import "blocks/image-map";
+@import "blocks/contact";
+@import "blocks/portfolio";
+@import "blocks/contact-deal";
+@import "blocks/contact-consult";
+@import "blocks/contact-access";
+@import "blocks/contact-bathroom";
+@import "blocks/contact-modal";
+@import "blocks/project";
+@import "blocks/video-review";
+@import "blocks/news";
+@import "blocks/autograph";
+@import "blocks/map";
+@import "blocks/main-footer";
+@import "blocks/bathrooms-list";
+@import "blocks/step-block";
+@import "blocks/about-intro";
+@import "blocks/team";
+@import "blocks/documents";
+@import "blocks/partners";
+@import "blocks/advantages";
+@import "blocks/object";
+@import "blocks/post-objects";
+@import "blocks/blog";
+@import "blocks/filters";
+@import "blocks/block-page";

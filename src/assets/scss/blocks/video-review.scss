@@ -11,3 +11,11 @@
     @include font-size(14);
   }
 }
+
+@include media-breakpoint-up(md) {
+  .video-review {
+    background-image: url("/assets/img/contact-bgr-left-2.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+}

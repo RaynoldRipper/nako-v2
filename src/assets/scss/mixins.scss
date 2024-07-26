@@ -1,14 +1,52 @@
 @mixin font-size($px) {
-  // Кастыльно, но да ладно
-  @if $px == 34 {
+  line-height: 1.3;
+  $media-difference: 0;
+
+  @if ($px > 30) {
+    $media-difference: 10;
   }
 
-  $rem: calc($px / 16);
-  font-size: #{$rem}rem;
-  line-height: 1.3;
+  @if ($px > 40) {
+    $media-difference: 24;
+  }
+
+  @if ($px > 60) {
+    $media-difference: 36;
+  }
+
+  @include media-breakpoint-up(md) {
+    $rem: calc($px / 16);
+    font-size: #{$rem}rem;
+  }
+  @include media-breakpoint-down(md) {
+    $rem: calc(($px - $media-difference) / 16);
+    font-size: #{$rem}rem;
+  }
 }
 
 @mixin section-title {
   @include font-size(34);
   text-transform: uppercase;
+}
+
+@mixin default-link-hover($hover-color: $primary) {
+  transition: all .3s;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+@mixin scroll-style {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: #DDEDF6;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #D9D9D9;
+    border-radius: 4px;
+  }
 }

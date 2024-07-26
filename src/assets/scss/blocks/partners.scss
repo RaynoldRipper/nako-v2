@@ -1,0 +1,15 @@
+.partners {
+  padding-top: 47px;
+  padding-bottom: 60px;
+
+  &__title {
+    margin-bottom: 46px;
+  }
+
+  &__logo {
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+}

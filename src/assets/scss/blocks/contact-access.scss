@@ -1,0 +1,65 @@
+.contact-access {
+  margin-bottom: 25px;
+  padding-top: 53px;
+  padding-bottom: 58px;
+  position: relative;
+  background-image: url("/assets/img/access-form-bgr-left.png"), url("/assets/img/access-form-bgr-right.png");
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  //background-size: cover;
+
+  &__image {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__image-text {
+    @include font-size(14);
+  }
+
+  &__form {
+    background-color: $form-main-bgr;
+    z-index: 2;
+    max-width: 600px;
+
+    .contact__form__policy {
+      text-align: left;
+    }
+  }
+
+  &__list {
+    margin-bottom: 60px;
+    max-width: 340px;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .contact-access {
+    &__form {
+      padding-left: 40%;
+      margin-left: -130px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .contact-access {
+    &__image {
+      left: -200px;
+      z-index: 1;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+  .contact-access {
+    background-size: cover, cover;
+    &__image {
+      display: none;
+      //left: -400px;
+    }
+  }
+}

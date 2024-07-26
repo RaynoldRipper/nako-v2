@@ -1,0 +1,77 @@
+.autograph {
+  position: relative;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  &__card {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    @include font-size(26);
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  &__name {
+    @include font-size(18);
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  &__position {
+    @include font-size(14);
+    font-weight: 300;
+  }
+
+  &__signature {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    img {
+
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .autograph {
+    padding-top: 110px;
+    padding-bottom: 138px;
+    background-image: url("/assets/img/autograph-bgr.png");
+    &__photo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .autograph {
+    padding-top: 60px;
+    &__photo {
+      margin-top: 25px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

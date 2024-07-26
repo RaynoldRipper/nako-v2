@@ -1,0 +1,23 @@
+.block-page {
+  min-height: calc(100vh - 100px);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    @include font-size(60);
+    margin-bottom: 25px;
+  }
+
+  .nako-list-2 {
+    li {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .block-page {
+    min-height: 70vh;
+    background-position: right;
+  }
+}

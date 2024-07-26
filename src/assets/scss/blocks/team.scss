@@ -1,0 +1,36 @@
+.team {
+  padding-top: 53px;
+  padding-bottom: 85px;
+
+  &__list {
+
+  }
+
+  &__title {
+    margin-bottom: 42px;
+  }
+
+  &__item {
+    background-color: #454545;
+    text-align: left;
+    &__info {
+      padding: 14px 38px 22px 38px;
+    }
+    &__name{
+      @include font-size(16);
+      margin-bottom: 12px;
+    }
+
+    &__position {
+      @include font-size(14);
+    }
+
+    &__photo {
+      border-radius: 14px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
