@@ -26,6 +26,11 @@
   }
 }
 
+@include media-breakpoint-down(xxl) {
+  .hide-down-xxl {
+    display: none;
+  }
+}
 
 @include media-breakpoint-down(lg) {
   .hide-down-lg {
