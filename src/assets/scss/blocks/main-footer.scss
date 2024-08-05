@@ -68,7 +68,7 @@
     font-weight: 300;
   }
 
-  &__policy {
+  &__policy, &__link {
     @include font-size(14);
     display: inline-block;
     text-decoration: none;

@@ -126,6 +126,24 @@ $social-btn-border-radius: 5px;
     }
   }
 
+  &.primary-outline {
+    text-align: center;
+    border: 1px solid $primary;
+    color: $primary;
+    border-radius: var(--default-border-radius);
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+    font-weight: 500;;
+    @include font-size(14);
+
+    &:hover {
+      border-color: #ffd6a2;
+      color: #ffd6a2;
+    }
+  }
+
   // Btn colors
 
   &.white {
@@ -171,7 +189,7 @@ $social-btn-border-radius: 5px;
 
 @include media-breakpoint-up(md) {
   .nako-btn {
-    &.primary {
+    &.primary, &.primary-outline {
       &.lg {
         padding: 28px;
         max-width: 320px;
